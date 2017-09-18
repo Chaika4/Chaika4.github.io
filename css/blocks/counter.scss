@@ -1,0 +1,26 @@
+.container {
+    &-counter {
+        min-height: 700px;
+        background: rgba(0, 0, 0, 0.9);
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__item {
+            width: 60%;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            animation-name: transfiguration;
+            animation-duration: 14s;
+            transition-duration: 2s;
+            animation-iteration-count: infinite;
+            font-size: 22px;
+        }
+    }
+}

@@ -1,0 +1,291 @@
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Didact Gothic', sans-serif;
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    p {
+        margin: 0;
+    }
+    h1 {
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+@import "normalize.css";
+@import "blocks/header.scss";
+@import "blocks/slider.scss";
+@import "blocks/table.scss";
+@import "blocks/lyrics.scss";
+@import "blocks/counter.scss";
+@import "blocks/footer.scss";
+@keyframes backSlide {
+    25% {
+        background: url(../img/back1.jpg)no-repeat;
+        background-size: cover;
+    }
+    50% {
+        background: url(../img/back2.jpg)no-repeat;
+        background-size: cover;
+    }
+    75% {
+        background: url(../img/back3.jpg)no-repeat;
+        background-size: cover;
+    }
+    100% {
+        background: url(../img/back4.jpg)no-repeat;
+        background-size: cover;
+    }
+}
+@keyframes shining {
+    0% {
+        text-shadow: 0px 0px 0px white;
+    }
+    0% {
+        text-shadow: 2px 2px 2px white;
+    }
+    10% {
+        text-shadow: 6px 6px 6px white;
+    }
+    20% {
+        text-shadow: 3px 3px 9px white;
+    }
+    30% {
+        text-shadow: 9px 6px 22px white;
+    }
+    40% {
+        text-shadow: 11px -11px 3px white;
+    }
+    50% {
+        text-shadow: 7px 7px 9px white;
+    }
+    60% {
+        text-shadow: 22px 32px 30px white;
+    }
+    70% {
+        text-shadow: 7px 7px 7px white;
+    }
+    80% {
+        text-shadow: 14px 14px 14px white;
+    }
+    90% {
+        text-shadow: 6px 6px 12px white;
+    }
+    100% {
+        text-shadow: 2px 2px 2px white;
+    }
+}
+@keyframes colorized {
+    0% {
+        border-image: url(../img/item1.jpg) 10 10 10 10;
+    }
+    0% {
+        border-image: url(../img/item2.jpg) 10 10 10 10;
+    }
+    10% {
+        border-image: url(../img/item3.jpg) 10 10 10 10;
+    }
+    20% {
+        border-image: url(../img/item4.jpg) 10 10 10 10;
+    }
+    30% {
+        border-image: url(../img/item5.jpg) 10 10 10 10;
+    }
+    40% {
+        border-image: url(../img/item6.jpg) 10 10 10 10;
+    }
+    50% {
+        border-image: url(../img/item7.jpg) 10 10 10 10;
+    }
+    60% {
+        border-image: url(../img/back1.jpg) 10 10 10 10;
+    }
+    70% {
+        border-image: url(../img/back2.jpg) 10 10 10 10;
+    }
+    80% {
+        border-image: url(../img/back3.jpg) 10 10 10 10;
+    }
+    90% {
+        border-image: url(../img/back4.jpg) 10 10 10 10;
+    }
+    100% {
+        border-image: url(../img/item1.jpg) 10 10 10 10;
+    }
+}
+@keyframes colors {
+    0% {
+        background: rgba (0, 0, 0, 0.1);
+    }
+    10% {
+        background: rgba (0, 0, 0, 0.2);
+    }
+    20% {
+        background: rgba (0, 0, 0, 0.3);
+    }
+    30% {
+        background: rgba (0, 0, 0, 0.4);
+    }
+    40% {
+        background: rgba (0, 0, 0, 0.5);
+    }
+    50% {
+        background: rgba (0, 0, 0, 0.6);
+    }
+    60% {
+        background: rgba (0, 0, 0, 0.7);
+    }
+    70% {
+        background: rgba (0, 0, 0, 0.8);
+    }
+    100% {
+        background: rgba (0, 0, 0, 0.9);
+    }
+}
+@keyframes spin {
+     0% {
+transform: rotate(0deg);
+}
+  100% {
+            transform: rotate(360deg); } 
+}
+@keyframes away {
+    10% {
+        opacity: 1;
+        text-shadow: 3px 3px 3px white;
+    }
+    20% {
+        opacity: 0.9;
+        text-shadow: 3px 3px 6px white;
+    }
+    30% {
+        opacity: 0.8;
+        text-shadow: 3px 3px 9px white;
+    }
+    40% {
+        opacity: 0.7;
+        text-shadow: 3px 3px 12px white;
+    }
+    50% {
+        opacity: 0.6;
+        text-shadow: 3px 3px 15px white;
+    }
+    60% {
+        opacity: 0.5;
+        text-shadow: 3px 3px 18px white;
+    }
+    70% {
+        opacity: 0.4;
+        text-shadow: 3px 3px 21px white;
+    }
+    80% {
+        opacity: 0.3;
+        text-shadow: 3px 3px 24px white;
+    }
+    90% {
+        opacity: 0.2;
+        text-shadow: 3px 3px 27px white;
+    }
+    100% {
+        opacity: 0.1;
+        text-shadow: 3px 3px 30px white;
+    }
+}
+@keyframes swim {
+    10% {
+        filter: blur(10px);
+    }
+    20% {
+        filter: blur(50px);
+    }
+    30% {
+        filter: blur(70px);
+    }
+    40% {
+        filter: blur(100px);
+    }
+    50% {
+        filter: blur(120px);
+    }
+    60% {
+        filter: blur(150px);
+    }
+    70% {
+        filter: blur(200px);
+    }
+    80% {
+        filter: blur(230px);
+    }
+    90% {
+        filter: blur(270px);
+    }
+    100% {
+        filter: blur(300px);
+    }
+}
+@keyframes transfiguration {
+    10% {
+        -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        background: url(../img/some1.jpg)no-repeat;
+        background-size: cover;
+    }
+    20% {
+        -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        background: url(../img/some2.jpg)no-repeat;
+        background-size: cover;
+    }
+    30% {
+        -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        background: url(../img/some3.jpg)no-repeat;
+        background-size: cover;
+    }
+    40% {
+        -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+        background: url(../img/some4.jpg)no-repeat;
+        background-size: cover;
+    }
+    50% {
+        -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+        background: url(../img/some5.jpg)no-repeat;
+        background-size: cover;
+    }
+    60% {
+        -webkit-clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+        clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+        background: url(../img/some6.jpg)no-repeat;
+        background-size: cover;
+    }
+    70% {
+        -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        background: url(../img/some7.jpg)no-repeat;
+        background-size: cover;
+    }
+    80% {
+        -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        background: url(../img/some1.jpg)no-repeat;
+        background-size: cover;
+    }
+    90% {
+        -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        background: url(../img/some2.jpg)no-repeat;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,66 @@
+.container {
+    &-header {
+        min-height: 638px;
+        animation-name: backSlide;
+        animation-duration: 20s;
+        transition-duration: 7s;
+        animation-iteration-count: infinite;
+        background: url(../img/back1.jpg)no-repeat 100% 100%;
+        background-size: cover;
+        color: white;
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav {
+            ul {
+                padding-left: 30px;
+                padding-right: 30px;
+                display: flex;
+                justify-content: space-between;
+                min-height: 60px;
+                li {} a {
+                    display: block;
+                    color: white;
+                    font-size: 26px;
+                    line-height: 60px;
+                    width: 120px;
+                    text-align: center;
+                    animation-name: shining;
+                    animation-duration: 30s;
+                    transition-duration: 2s;
+                    text-shadow: 0px px 10px white;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
+        &__title {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 520px;
+            padding-top: 200px;
+            h1 {
+                font-size: 90px;
+            }
+            .btn {
+                display: block;
+                height: 60px;
+                width: 320px;
+                border: 10px solid white;
+                border-image: url(../img/item1.jpg) 10 10 10 10;
+                color: white;
+                font-size: 52px;
+                line-height: 52px;
+                animation-name: colorized;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                transition-duration: 2s;
+                text-shadow: 10px 10px 30px white;
+                margin-top: 100px;
+            }
+        }
+    }
+}

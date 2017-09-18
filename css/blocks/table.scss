@@ -1,0 +1,23 @@
+.container {
+    &-table {
+        min-height: 870px;
+        background: url(../img/table2.jpg)no-repeat 50%;
+        background-size: cover;
+        .wrapper {
+            margin: 0 auto;
+            //margin-top:20px;
+            height: 800px;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 10px solid white;
+            border-radius: 50%;
+            animation-name: spin;
+            animation-duration: 7s;
+            transition-duration: 2s;
+            animation-iteration-count: infinite;
+            background: url(../img/tableBack.jpg)no-repeat 50%;
+        }
+    }
+}

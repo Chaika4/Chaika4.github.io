@@ -1,0 +1,34 @@
+.container-table {
+  min-height: 870px;
+  background: url(../img/table2.jpg) no-repeat 50%;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .container-table .wrapper {
+    margin: 0 auto;
+    height: 800px;
+    width: 60%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 10px solid white;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-animation-name: spin;
+            animation-name: spin;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+    -webkit-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    background: url(../img/tableBack.jpg) no-repeat 50%; }
